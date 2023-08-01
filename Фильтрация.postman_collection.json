@@ -1,0 +1,2157 @@
+{
+	"info": {
+		"_postman_id": "f2a2e78d-44a4-4741-bbb3-f611ec4a8328",
+		"name": "Фильтрация",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25024572"
+	},
+	"item": [
+		{
+			"name": "New Request Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Герой&breed__code=Indian&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "Indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Герой&breed__code=cockatiel&gender__code=f&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Герой&breed__code=german_shepherd&gender__code=wait_home&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Герой&breed__code=pitbull&gender__code=NotSpecified",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Герой&breed__code=crocodile&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Герой&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кот&breed__code=cockatiel&gender__code=wait_home",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кот&breed__code=german_shepherd&gender__code=NotSpecified&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кот&breed__code=pitbull&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кот&breed__code=crocodile&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кот&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кот&breed__code=Indian&gender__code=f&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "Indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кошка&breed__code=german_shepherd&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кошка&breed__code=pitbull&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 15",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кошка&breed__code=crocodile&gender__code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кошка&gender__code=f",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 17",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кошка&breed__code=Indian&gender__code=wait_home&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "Indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 18",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Кошка&breed__code=cockatiel&gender__code=NotSpecified&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Минипиг&breed__code=pitbull&gender__code=m",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Минипиг&breed__code=crocodile&gender__code=f&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 21",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Минипиг&breed__code=-&gender__code=wait_home&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "-"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 22",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Минипиг&breed__code=Indian&gender__code=NotSpecified&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "Indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 23",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Минипиг&breed__code=cockatiel&gender__code=-&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "-"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 24",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Минипиг&breed__code=german_shepherd&gender__code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Минипиг"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 25",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=crocodile&gender__code=wait_home&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 26",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=-&gender__code=NotSpecified&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "-"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 27",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=Indian&gender__code=-&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "Indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "-"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 28",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=cockatiel&gender__code=m",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 29",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=german_shepherd&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 30",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=pitbull&gender__code=f&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 31",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 32",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=&breed__code&gender__code&age",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": ""
+						},
+						{
+							"key": "breed__code",
+							"value": null
+						},
+						{
+							"key": "gender__code",
+							"value": null
+						},
+						{
+							"key": "age",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 33",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&breed__code=cockatiel&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 34",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=-&breed__code=german_shepherd&gender__code=f&age=0",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "-"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 35",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&species__name=-&breed__code=pitbull&gender__code=wait_home&age=1",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "-"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 36",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseURL}}/api/pet/?page=1&page_size=6&breed__code=crocodile&gender__code=NotSpecified&age=2",
+					"protocol": "http",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "NotSpecified"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "158.160.56.133"
+		}
+	]
+}

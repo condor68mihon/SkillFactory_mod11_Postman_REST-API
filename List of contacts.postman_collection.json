@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "8d6309b5-ee51-48ee-96b9-e43a4aabf7c0",
+		"name": "List of contacts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25024572"
+	},
+	"item": [
+		{
+			"name": "Получение списка пользователей",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "zxqw34as",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "condor68",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://api-qa.skillbox.ru/practice2/api/users",
+					"protocol": "http",
+					"host": [
+						"api-qa",
+						"skillbox",
+						"ru"
+					],
+					"path": [
+						"practice2",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение конкретного пользователя",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "zxqw34as",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "condor68",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создание пользователя",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "zxqw34as",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "condor68",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"itemsOfClients\": [\r\n\t{\r\n\t   \"id\": 13,\r\n\t   \"person\": {\r\n\t\t\"name\": \"ве\",\r\n\t\t\"surname\": \"кккк\",\r\n        \"patronymic\": \"\",\r\n\t\t\"dateOfBirth\": \"аааа\",\r\n\t\t\"location\": \"\"\r\n\t             }\r\n\t }\r\n        ]\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api-qa.skillbox.ru/practice2/api/users/create",
+					"protocol": "http",
+					"host": [
+						"api-qa",
+						"skillbox",
+						"ru"
+					],
+					"path": [
+						"practice2",
+						"api",
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Обновление пользователя",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "zxqw34as",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "condor68",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"update\": {\r\n\t\"name\": \"\",\r\n\t\"surname\": \"\",\r\n\t\"dateOfBirth\": \"\",\r\n\t\"location\": \"\"\r\n\t }\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api-qa.skillbox.ru/practice2/api/users/7/update",
+					"protocol": "http",
+					"host": [
+						"api-qa",
+						"skillbox",
+						"ru"
+					],
+					"path": [
+						"practice2",
+						"api",
+						"users",
+						"7",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление конкретного пользователя",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "zxqw34as",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "condor68",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://api-qa.skillbox.ru/practice2/api/users/144/delete",
+					"protocol": "http",
+					"host": [
+						"api-qa",
+						"skillbox",
+						"ru"
+					],
+					"path": [
+						"practice2",
+						"api",
+						"users",
+						"144",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удаление всех пользователей",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "zxqw34as",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "condor68",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
